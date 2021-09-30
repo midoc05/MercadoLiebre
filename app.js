@@ -3,10 +3,11 @@ const server = express();
 
 const path = require("path"); 
 
-server.use("/static", express.static("/public"));
+const publicPath = path.join(__dirname,"./public");
+server.use (express.static(publicPath));
 
 server.get ('/', (req,res) => {
-    res.sendFile(path.join(__dirname,'/views/home.html'))
+    res.sendFile(path.join(__dirname,'./views/home.html'))
     })
 
 server.listen (3030, ()=>{
