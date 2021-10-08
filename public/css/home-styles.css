@@ -64,12 +64,14 @@ header h2 {
   color: white
 }
 
-.icon-footer{
-  color: blue;
-}
+
 
 /* footer */
 
 footer section p {
   font-size: 1.2rem;
+}
+
+.icon-footer{
+  color: blue;
 }
