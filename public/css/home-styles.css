@@ -62,12 +62,14 @@ header h2 {
   font-size: 1.8rem;
 }
 
-.product--prices .discount {
+.discount {
   font-size: 1.6rem;
+  color: green;
 }
 
 .product--img {
   width: 80vw;
+  box-sizing: border-box;
   align-content: center;
   border-bottom: 1px solid #ebebeb;
 }
