@@ -42,6 +42,18 @@ header p {
 
 /* main */
 
+main{
+width: 90vw;
+margin: auto;
+}
+
+.product{
+border: 15px solid lightgray;
+margin-bottom: 10px;
+width: 90vw;
+align-content: center;
+}
+
 header h2 {
   font-size:2.4rem;
 }
@@ -55,7 +67,9 @@ header h2 {
 }
 
 .product--img {
-  width: 400px;
+  width: 80vw;
+  align-content: center;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .camioncito{
@@ -76,6 +90,9 @@ header h2 {
   border-radius: 1px;
 }
 
+ul{
+  list-style: none;
+}
 
 
 /* footer */
