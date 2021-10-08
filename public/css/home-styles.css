@@ -58,7 +58,15 @@ header h2 {
   width: 400px;
 }
 
+.burger-menu{
+  display: flex; 
+  background-color: blue;
+  color: white
+}
 
+.icon-footer{
+  color: blue;
+}
 
 /* footer */
 
