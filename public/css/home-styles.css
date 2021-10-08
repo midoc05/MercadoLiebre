@@ -58,10 +58,22 @@ header h2 {
   width: 400px;
 }
 
+.camioncito{
+  font-size: 2rem;
+  width: 3.5rem;
+  color: green;
+  border: 2px solid green;
+  border-radius: 100%;
+}
+
 .burger-menu{
-  display: flex; 
+  display: flex;
+  font-size: 2rem; 
+  align-content: center;
   background-color: blue;
-  color: white
+  color: white;
+  width: 2rem; 
+  border-radius: 1px;
 }
 
 
@@ -74,4 +86,6 @@ footer section p {
 
 .icon-footer{
   color: blue;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
