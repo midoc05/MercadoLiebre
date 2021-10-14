@@ -47,6 +47,12 @@ width: 90vw;
 margin: auto;
 }
 
+.product-prices{
+display:flex;
+box-sizing: border-box;
+width:100%; 
+}
+
 .product{
 border: 15px solid lightgray;
 margin-bottom: 10px;
@@ -58,13 +64,21 @@ header h2 {
   font-size:2.4rem;
 }
 
-.product--prices {
+.price-detail {
+  display:flex;
+  box-sizing: content-box;
+  width:30%;
+  padding:5px;
   font-size: 1.8rem;
 }
 
 .discount {
+  display:flex;
   font-size: 1.6rem;
   color: green;
+  padding:5px;
+  box-sizing: content-box;
+  width: 70%;
 }
 
 .product--img {
@@ -75,11 +89,18 @@ header h2 {
 }
 
 .camioncito{
-  font-size: 2rem;
-  width: 3.5rem;
+  display: block;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
   color: green;
-  border: 2px solid green;
-  border-radius: 100%;
+  background-color: #fff;
+  border: 1px solid green;
+  padding:5px;
+  border-radius: 50%;
+  position:absolute;
+  right: 40px;
+  text-align: center;
 }
 
 .burger-menu{
