@@ -56,6 +56,8 @@ header p {
 
 /* main */
 
+/* main home */
+
 main{
 width: 90vw;
 margin: auto;
@@ -131,6 +133,27 @@ ul{
   list-style: none;
 }
 
+/* main register */
+
+.register-form {
+  display: flex;
+  position:absolute;
+  padding-left: 30px;
+  right: 50%;
+}
+
+.register-form label {
+font-size: 2rem;
+}
+
+.register-form input {
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.register-form li {
+  list-style: none;
+}
 
 /* footer */
 
