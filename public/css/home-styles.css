@@ -24,7 +24,21 @@ Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a; */
 
+/* nav */
 
+.navBar-search {
+  display: flex;
+  padding: 10px;
+  font-size: 2rem;
+  position: absolute;
+  right: 20px;
+}
+
+.navBar-search li {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 /* header */
 
