@@ -24,7 +24,21 @@ Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a; */
 
+/* nav */
 
+.navBar-search {
+  display: flex;
+  padding: 10px;
+  font-size: 2rem;
+  position: absolute;
+  right: 20px;
+}
+
+.navBar-search li {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 /* header */
 
@@ -85,68 +99,105 @@ header p {
 
 /* main */
 
-main {
+/* main home */
+
+main{
   background-color: #ebebeb;
   padding-bottom: 5px;
 }
-
-/* main section article i{
-  display: block;
-  font-size: 16px;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #39b54a;
-  background-color: #FFF;
-  border-radius: 50%;
-  position: absolute;
-  right: 20px;
-  top: -15px;
-  } */
-
-
 
 .home-banner img {
   width: 100%;
   margin-bottom: 5px;
 }
 
+.product-prices{
+display:flex;
+box-sizing: border-box;
+width:100%; 
+}
+
+.product{
+
+margin: auto;
+margin-bottom: 10px;
+width: 90%;
+align-content: center;
+background-color: white;
+
+}
+
 header h2 {
   font-size:2.4rem;
 }
 
-.product {
-  width: 90%;
-  margin: 10px auto;
-  background-color: white;
-}
-
-.product ul,
-.product h3 {
-  padding: 10px;
-} 
-
-.product--img {
-  width: 100%;
-}
-
-.product--prices {
+.price-detail {
+  display:flex;
+  box-sizing: content-box;
+  width:30%;
+  padding:5px;
   font-size: 1.8rem;
   list-style: none;
   display: flex;
 }
 
-.product--prices .discount {
+.discount {
+  display:flex;
   font-size: 1.6rem;
+  color: green;
+  padding:5px;
+  box-sizing: content-box;
+  width: 70%;
+}
+
+.product--img {
+  width: 100%;
+  box-sizing: border-box;
+  align-content: center;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.camioncito{
+  display: block;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  color: green;
+  background-color: #fff;
+  border: 1px solid green;
+  padding:5px;
+  border-radius: 50%;
+  position:absolute;
+  right: 40px;
+  text-align: center;
+}
+
+
+ul{
+  list-style: none;
+}
+
+/* main register */
+
+.register-form {
+  display: flex;
+  position:absolute;
+  right: 50%;
+  padding-left: 30px;
+}
+
+.register-form label {
+font-size: 2rem;
+}
+
+.register-form input {
+  border-radius: 5px;
   margin-left: 15px;
 }
 
-.product--name {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
+.register-form li {
+  list-style: none;
 }
-
-
 
 /* footer */
 
@@ -158,21 +209,19 @@ footer {
   padding: 20px;
 }
 
-footer article {
+footer section {
   text-align: center;
   width: 70%;
   margin: 10px;
   max-width: 330px;
 }
 
-footer article p {
+footer section p {
   font-size: 1.2rem;
-  
 }
 
-.big-icon {
-  font-size: 2em;
+.icon-footer{
   color: #1259c3;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
-
-
