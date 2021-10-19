@@ -30,38 +30,149 @@ Verde: #39b54a; */
 
 .top-header {
   background-color: #EAC926;
+  padding: 5px;
 }
 
+.top-header__input {
+  background-color: white;
+  width: 45%;
+}
+
+.top-header__input i{
+  background-color: white;
+}
+
+
+.top-header img {
+  width: 45%;
+}
+
+.top-header section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 header p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-align: center;
 }
 
+.burger-menu {
+  width: 40px;
+  padding: 10px 0;
+  font-size: 26px;
+  text-align: center;
+  color: white;
+  background-color: #1259c3;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.navBar {
+  display: none;
+}
+.navBar a {
+  text-decoration: none;
+}
+.navBar li {
+  list-style: none;
+}
 
 
 
 /* main */
 
+main {
+  background-color: #ebebeb;
+  padding-bottom: 5px;
+}
+
+/* main section article i{
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  } */
+
+
+
+.home-banner img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
 header h2 {
   font-size:2.4rem;
 }
 
+.product {
+  width: 90%;
+  margin: 10px auto;
+  background-color: white;
+}
+
+.product ul,
+.product h3 {
+  padding: 10px;
+} 
+
+.product--img {
+  width: 100%;
+}
+
 .product--prices {
   font-size: 1.8rem;
+  list-style: none;
+  display: flex;
 }
 
 .product--prices .discount {
   font-size: 1.6rem;
+  margin-left: 15px;
 }
 
-.product--img {
-  width: 400px;
+.product--name {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
 }
 
 
 
 /* footer */
 
-footer section p {
-  font-size: 1.2rem;
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
+
+footer article {
+  text-align: center;
+  width: 70%;
+  margin: 10px;
+  max-width: 330px;
+}
+
+footer article p {
+  font-size: 1.2rem;
+  
+}
+
+.big-icon {
+  font-size: 2em;
+  color: #1259c3;
+}
+
+
