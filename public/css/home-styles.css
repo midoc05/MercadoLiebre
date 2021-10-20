@@ -261,4 +261,8 @@ footer section p {
   .product {
     margin: 10px 0;
   }
+
+  .navBar {
+    display: block;
+  }
 }
