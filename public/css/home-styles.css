@@ -141,7 +141,7 @@ header h2 {
 margin: auto;
 margin-bottom: 10px;
 
-max-width: 288px;
+/* max-width: 288px; */
 align-content: center;
 background-color: white;
 
@@ -172,7 +172,7 @@ background-color: white;
 .price-detail {
   display:flex;
   box-sizing: content-box;
-  width:30%;
+  flex-grow:30%;
   padding:5px;
   font-size: 1.8rem;
   list-style: none;
@@ -185,7 +185,7 @@ background-color: white;
   color: #39b54a;
   padding:5px;
   box-sizing: content-box;
-  width: 70%;
+  flex-grow: 70%;
 }
 
 
@@ -333,16 +333,22 @@ footer section p {
   }
 
 
-  
+
   main section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+  }
+
+  .product-par {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .product {
     margin: 10px 0;
-    
+    width: 48%;
   }
 
 
@@ -356,6 +362,6 @@ footer section p {
 @media (min-width: 768px){
   .product {
     margin: 10px 0;
-    max-width: 248px;
+    width: 24%;
   }
 }
