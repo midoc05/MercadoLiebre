@@ -289,16 +289,6 @@ footer section p {
 
 
 @media (min-width: 361px){
-  main section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .product {
-    margin: 10px 0;
-    
-  }
 
   .navBar {
     display: flex;
@@ -309,6 +299,7 @@ footer section p {
 
   .navBar-search {
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     font-size: 1.2rem;
     /* position: absolute; */
@@ -323,6 +314,7 @@ footer section p {
 
   .navBar-login {
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     font-size: 1.2rem;
     /* position: absolute; */
@@ -339,6 +331,23 @@ footer section p {
   .burger-menu {
     display: none;
   }
+
+
+  
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .product {
+    margin: 10px 0;
+    
+  }
+
+
+
+
 }
 
 
