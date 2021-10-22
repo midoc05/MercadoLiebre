@@ -196,7 +196,7 @@ ul{
 
 .register-form {
   display: flex;
-  position:absolute;
+  position: absolute;
   right: 50%;
   padding-left: 30px;
 }
