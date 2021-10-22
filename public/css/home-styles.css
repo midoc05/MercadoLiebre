@@ -273,8 +273,11 @@ font-size: 2rem;
 }
 
 /* footer */
-
 footer {
+  background-color: white;
+}
+
+footer section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -283,14 +286,15 @@ footer {
   background-color: white;
 }
 
-footer section {
+footer article {
   text-align: center;
   width: 70%;
   margin: 10px;
   max-width: 330px;
+  
 }
 
-footer section p {
+footer article p {
   font-size: 1.2rem;
 }
 
@@ -301,7 +305,9 @@ footer section p {
 }
 
 
-
+.icon-footer:hover{
+  color: #39b54a;
+}
 
 
 
@@ -392,4 +398,16 @@ footer section p {
     margin: 10px 0;
     width: 24%;
   }
+
+  footer section {
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+
+  }
+
+  
+
 }
