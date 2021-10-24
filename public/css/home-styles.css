@@ -248,7 +248,7 @@ ul{
   right: 50%;
   padding-left: 30px;
   background-color: #e0e0e0;
-  width: 26vw;
+  width: 100%;
   align-content: center;
   align-self: center;
 }
@@ -265,7 +265,7 @@ ul{
   border-radius: 3px;
   border: none;
   padding: 13px 10px;
-  width: 20vw;
+  width: 70vw;
   margin-bottom: 20px;
   box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
   clear: both;
@@ -437,8 +437,12 @@ footer article p {
     width: 48%;
     
   }
-
-
+  .register-form {
+    width: 90%;
+  }
+  .campo_comp{
+    width: 75vw;
+  }
 
 
 }
@@ -460,7 +464,12 @@ footer article p {
     flex-wrap: nowrap;
 
   }
+  .register-form {
+    width: 40vw;
+  }
+  .campo_comp{
+    width: 30vw;
+  }
 
-  
 
 }
