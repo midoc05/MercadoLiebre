@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MercadoLiebre - Registro</title>
+    <title>Mercado Liebre</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/normalize.css">
-
-    <link rel="stylesheet" href="/css/register-styles.css">
     <link rel="stylesheet" href="/css/home-styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
@@ -19,13 +19,21 @@
 <body>
 
     <header class="top-header">
-
         <section>
-            <a href="/"><img width="200" src="/images/logo-mercado-liebre.svg" alt="logo de mercado liebre"></a>
-            <input type="text">
+            <img width="200" src="/images/logo-mercado-liebre.svg" alt="logo de mercado liebre">
+            <div class="top-header__input">
+                <input type="text" placeholder="Buscar productos, marcas">
+                <div class="icon-search">
+                    <i class="fas fa-search"></i>
+                </div>
+
+            </div>
         </section>
 
-        <p>Compra en cuotas y sin tarjeta de credito</p>
+        <p>
+            <i class="fas fa-hand-holding-usd"></i>
+            Compra en cuotas y sin tarjeta de credito
+        </p>
 
         <nav class="navBar">
             <ul class="navBar-search">
@@ -34,15 +42,27 @@
                 <li><a href="">Vender</a></li>
                 <li><a href="">Ayuda</a></li>
             </ul>
+
             <ul class="navBar-login">
-                <li><a href="./register.html">Crea tu cuenta</a></li>
-                <li><a href="./login.html">Ingresa</a></li>
-                <li><a href="">Mis compras</a></li>
+                <li>
+                    <a href="./register.html">Crea tu cuenta </a>
+                    <i class="far fa-id-card"></i>
+                </li>
+                <li>
+                    <a href="./login.html">Ingresa </a>
+                    <i class="fas fa-sign-in-alt"></i>
+                </li>
+                <li>
+                    <a href="">Mis compras </a>
+                    <i class="fas fa-shopping-basket"></i>
+                </li>
             </ul>
         </nav>
+
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
         </div>
+
     </header>
 
     <!--Inicio del formulario-->
@@ -50,51 +70,65 @@
         <form action="/registro" method="POST">
 
             <li>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre">
+                <input class="campo_comp" type="text" id="nombre" name="nombre" placeholder="Nombre y apellido"
+                    autofocus>
             </li>
 
             <li>
-                <label for="appellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido">
+                <input class="campo_comp" type="text" id="usuario" name="usuario" placeholder="Usuario">
             </li>
 
             <li>
-                <label for="nacimiento">Fecha de nacimiento</label>
-                <input type="date" id="nacimiento" name="nacimiento">
+                <p>Fecha de nacimiento</p>
+                <input class="campo_comp" type="date" id="nacimiento" name="nacimiento">
             </li>
 
             <li>
-                <label for="domicilio">domicilio</label>
-                <input type="text" id="domicilio" name="domicilio">
+                <input class="campo_comp" type="text" id="domicilio" name="domicilio" placeholder="domicilio">
             </li>
 
             <li>
-                <label for="perfil">Perfil de usuario</label>
-                <label for="perfil">Comprador
-                    <input name="perfil" id="perfil" type="radio" value="comprador" checked></label>
-                <label for="perfil">Vendedor
-                    <input name="perfil" id="perfil" type="radio" value="vendedor"></label>
+                <p>Perfil de usuario</p>
+                <label>
+                    <input name="perfil" id="comprador" type="radio" value="comprador" checked>Comprador
+                </label>
+                <label class="container">
+                    <input name="perfil" id="vendedor" type="radio" value="vendedor">Vendedor
+                </label>
             </li>
 
-            <li>
-                <label for="categoria">Categoria de interés</label>
-                <label for="electro">Electro
-                    <input name="categoria" id="electro" type="checkbox" value="electro"></label>
-                <label for="moda">Moda
-                    <input name="categoria" id="moda" type="checkbox" value="moda"></label>
-                <label for="hogar">Hogar
-                    <input name="categoria" id="hogar" type="checkbox" value="hogar"></label>
-                <label for="jugueteria">Juguetería
-                    <input name="categoria" id="jugueteria" type="checkbox" value="jugueteria"></label>
-                <label for="vidaSana">Vida sana
-                    <input name="categoria" id="vidaSana" type="checkbox" value="vidaSana"></label>
+            <p>Categoria de interés</p>
+            <label>
+                <input name="categoria" id="electro" type="checkbox" value="electro">Electro
+
+            </label>
+
+            <li><label for="moda">
+                    <input name="categoria" id="moda" type="checkbox" value="moda">Moda
+
+                </label>
             </li>
+            <li>
+                <label for="hogar">
+                    <input name="categoria" id="hogar" type="checkbox" value="hogar">Hogar
+                </label>
+            </li>
+            <li>
+                <label for="jugueteria">
+                    <input name="categoria" id="jugueteria" type="checkbox" value="jugueteria">Juguetería
+                </label>
+            </li>
+            <li>
+                <label for="vidaSana">
+                    <input name="categoria" id="vidaSana" type="checkbox" value="vidaSana">Vida sana
+                </label>
+            </li>
+
             <li class="register-button">
                 <button type="submit">Enviar</button>
                 <button type="reset">Borrar</button>
             </li>
-            
+
 
         </form>
     </div>
